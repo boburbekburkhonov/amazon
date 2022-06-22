@@ -1,1 +1,86 @@
 // bu yerda hero bor
+.hero {
+  padding-bottom: 30px;
+  background: rgba(242, 242, 242, 0.4);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    max-width: 440px;
+  }
+
+  &__desc-orange {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FF9900;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000;
+  }
+
+  &__desc-small {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(35, 47, 62, 0.48);
+  }
+
+  &__left-btn-buy {
+    max-width: 124px;
+    margin-right: 12px;
+    padding: 9px 14px;
+    text-decoration: none;
+    background: #146EB4;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.6;
+      color: #fff;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  &__left-btn-more {
+    max-width: 124px;
+    padding: 9px 14px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #146EB4;
+    background: #FFFFFF;
+    border: 1px solid #146EB4;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+}

@@ -1,0 +1,28 @@
+.categories {
+  padding-top: 56px;
+
+  &__top {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &-desc {
+      margin: 0;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+    }
+
+    &-desc-blue {
+      margin: 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: right;
+      color: #146EB4;
+      cursor: pointer;
+    }
+  }
+
+}

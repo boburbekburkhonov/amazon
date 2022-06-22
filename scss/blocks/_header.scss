@@ -1,1 +1,119 @@
 // bu yerda header bor
+.header {
+  padding-top: 30px;
+  padding-bottom: 36px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    text-decoration: none;
+    transition: 0.4s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
+  &__like {
+    background-color: crimson;
+    border-radius: 20%;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__select {
+    max-width: 63px;
+    padding: 17px 0 17px 13px;
+    background: rgba(242, 242, 242, 0.48);
+    border: 1px solid transparent;
+
+    &:focus {
+      outline: none;
+      border: 1px solid transparent;
+    }
+
+  }
+
+  &__input {
+    width: 536px;
+    padding: 17px 0 17px 13px;
+    background: rgba(242, 242, 242, 0.48);
+    border: 1px solid transparent;
+
+    &:focus {
+      outline: none;
+      border: 1px solid transparent;
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(35, 47, 62, 0.16);
+    }
+  }
+
+  // &__input::before {
+    //   content: "";
+    //   display: inline-block;
+    //   background-image: url(../../images/logo.svg);
+    //   background-size: contain;
+    //   background-position: left;
+    //   width: 20px;
+    //   height: 20px;
+    // }
+
+    &__right {
+      display: flex;
+
+      &-img-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      &-btn {
+        padding: 12px 32px;
+        text-decoration: none;
+        background: #232F3E;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        transition: 0.4s;
+
+        &:hover {
+          opacity: 0.6;
+        }
+
+        &:active {
+          opacity: 0.4;
+        }
+      }
+    }
+
+    &__select-country-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    &__select-country {
+      width: 100px;
+      border: 1px solid transparent;
+      appearance: none;
+
+      &:focus {
+        outline: none;
+        border: 1px solid transparent;
+      }
+    }
+
+  }
