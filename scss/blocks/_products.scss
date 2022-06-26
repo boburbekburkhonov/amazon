@@ -25,4 +25,18 @@
     }
   }
 
+  &__item {
+    transition: all, 0.4s;
+
+    &:hover {
+      opacity: 0.6;
+      border: 7px solid dimgray;
+      border-radius: 10px;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
+  }
+
 }
