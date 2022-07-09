@@ -163,6 +163,10 @@ elForm.addEventListener("submit", (evt) => {
 })
 
 const renderBookmark = function(array, html) {
+  if(bookmark.length > 0){
+    elBookmark.classList.add("active")
+  }
+
   array.forEach(item => {
     const newCloseBtn = document.createElement("button");
     const newProdsItem = document.createElement("li");
@@ -231,11 +235,6 @@ elProducts.addEventListener("click", (evt) => {
       bookmark.push(findBookmark)
     }
 
-
-
-    if(bookmark.length > 0){
-      elBookmark.classList.add("active")
-    }
 
     elModal.innerHTML = null;
 
